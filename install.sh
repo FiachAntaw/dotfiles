@@ -35,3 +35,7 @@ if [ -n "$TMUX" ]; then
   tmux source-file ~/.tmux.conf
 fi
 
+# Set up git
+git config --global user.name "Fiach Antaw"
+git config --global user.email "FiachAntaw@users.noreply.github.com"
+
