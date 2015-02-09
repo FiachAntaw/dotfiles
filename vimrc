@@ -13,6 +13,7 @@ Plugin 'tpope/vim-fugitive'
 Plugin 'jmcantrell/vim-virtualenv'
 Plugin 'chriskempson/base16-vim'
 Plugin 'kien/ctrlp.vim'
+Plugin 'klen/python-mode'
 Plugin 'scrooloose/syntastic'
 Plugin 'majutsushi/tagbar'
 Plugin 'edkolev/tmuxline.vim'
@@ -52,6 +53,9 @@ let g:tmuxline_preset = {
     \'y'        : '%R',
     \'z'        : '#h'}
 
+" Disable pymode linter (use Syntactic instead)
+let g:pymode_lint = 0
+
 " Syntactic settings
 let g:syntastic_always_populate_loc_list = 1
 let g:syntastic_auto_loc_list = 1
@@ -61,6 +65,7 @@ let g:syntastic_c_check_header = 1
 let g:syntastic_cpp_check_header = 1
 let g:syntastic_c_compiler_options = '-std=c11'
 let g:syntastic_cpp_compiler_options = '-std=c++11'
+let g:syntastic_python_python_exec = 'python3'
 
 " Set up leader & hotkeys
 let mapleader=","
