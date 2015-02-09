@@ -1,0 +1,2 @@
+# Ignore Vundle bundles
+vim/bundle/*
