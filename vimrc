@@ -86,3 +86,6 @@ nmap <Leader><S-Tab> :bprevious<CR>
 nmap <Leader>w :w<CR>
 nmap <Leader>q :bd<CR>
 
+" Use hidden buffers (keeps undo history between :bnext/:bprevious)
+set hidden
+
