@@ -56,6 +56,9 @@ let g:tmuxline_preset = {
 " Disable pymode linter (use Syntactic instead)
 let g:pymode_lint = 0
 
+" Disable pymode autocomplete on dot
+let g:pymode_rope_complete_on_dot = 0
+
 " Syntactic settings
 let g:syntastic_always_populate_loc_list = 1
 let g:syntastic_auto_loc_list = 1
