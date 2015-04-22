@@ -29,6 +29,7 @@ antigen bundles <<EOBUNDLES
 	virtualenv
 	virtualenvwrapper
 	zsh-users/zsh-syntax-highlighting
+	zsh-users/zsh-history-substring-search
 EOBUNDLES
 
 # Apply antigen bundles
@@ -37,6 +38,9 @@ antigen apply
 # Set prompt
 PROMPT="%{$fg_no_bold[green]%}%n %{$fg_bold[blue]%}%~ %{$reset_color%}\$ "
 RPROMPT="%{$reset_color%}[%{$fg_no_bold[yellow]%}%?%{$reset_color%}]"
+
+# Auto-select first entry when doing tab completion
+setopt menucomplete
 
 # Import aliases
 source ~/.bash_aliases
