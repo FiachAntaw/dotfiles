@@ -44,3 +44,7 @@ setopt menucomplete
 
 # Import aliases
 source ~/.bash_aliases
+
+# Set default editor to vim
+export VISUAL=vim
+export EDITOR="$VISUAL"

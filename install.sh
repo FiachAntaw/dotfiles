@@ -11,6 +11,7 @@ rm -f ~/.tmuxline.conf
 rm -rf ~/.vim
 rm -f ~/.vimrc
 rm -f ~/.zshrc
+rm -f ~/.gdbinit
 
 # Remove local copies of repos
 rm -rf antigen/antigen
@@ -36,6 +37,9 @@ ln -s `pwd`/config/base16-shell ~/.config/base16-shell
 # Symlink .antigen to home
 mkdir -p `pwd`/antigen
 ln -s `pwd`/antigen ~/.antigen
+
+# Symlink .gdbinit to home
+ln -s `pwd`/gdbinit ~/.gdbinit
 
 # Install Antigen
 git clone https://github.com/zsh-users/antigen.git ~/.antigen/antigen
